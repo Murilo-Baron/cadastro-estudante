@@ -33,6 +33,7 @@ export class CadastroEstudanteComponent {
         response => {
           console.log('Estudante cadastrado com sucesso:', response);
           this.estudanteForm.reset();
+          this.carregarEstudantes();
         },
         error => {
           console.error('Erro ao cadastrar o estudante:', error);
