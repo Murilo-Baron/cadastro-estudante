@@ -1,0 +1,28 @@
+{
+  "estudantes": [
+    {
+      "id": 1,
+      "nome": "João",
+      "idade": 20,
+      "curso": "Engenharia",
+      "email": "joao@example.com",
+      "telefone": "1234567890"
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "idade": 22,
+      "curso": "Medicina",
+      "email": "maria@example.com",
+      "telefone": "9876543210"
+    },
+    {
+      "nome": "MURILO BARON PEREIRA",
+      "idade": 20,
+      "curso": "ads",
+      "email": "muuhbarrow@gmail.com",
+      "telefone": "11981060117",
+      "id": 3
+    }
+  ]
+}
