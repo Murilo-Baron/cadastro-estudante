@@ -1,59 +1,63 @@
 <h2>Cadastro de Estudante</h2>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.1/css/bootstrap.min.css">
+<div class="tab-content">
+  <div class="tab-pane fade show active">
 
-<form [formGroup]="estudanteForm" (ngSubmit)="cadastrarEstudante()">
-  <div class="form-group">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" class="form-control" formControlName="nome">
+    <div class="cadastro-estudante">
+      <form [formGroup]="estudanteForm" (ngSubmit)="cadastrarEstudante()">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" class="form-control" formControlName="nome">
+        </div>
+
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" class="form-control" formControlName="idade">
+        </div>
+
+        <div class="form-group">
+          <label for="curso">Curso:</label>
+          <input type="text" id="curso" class="form-control" formControlName="curso">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" formControlName="email">
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" class="form-control" formControlName="telefone">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="idade">Idade:</label>
-    <input type="number" id="idade" class="form-control" formControlName="idade">
   </div>
+  <hr>
+  <div class="tab-pane fade">
+    <h2>Listagem de Estudantes</h2>
 
-  <div class="form-group">
-    <label for="curso">Curso:</label>
-    <input type="text" id="curso" class="form-control" formControlName="curso">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Curso</th>
+          <th>Email</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let estudante of estudantes">
+          <td>{{ estudante.nome }}</td>
+          <td>{{ estudante.idade }}</td>
+          <td>{{ estudante.curso }}</td>
+          <td>{{ estudante.email }}</td>
+          <td>{{ estudante.telefone }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="carregarEstudantes()">Carregar Estudantes</button>
   </div>
-
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" class="form-control" formControlName="email">
-  </div>
-
-  <div class="form-group">
-    <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" class="form-control" formControlName="telefone">
-  </div>
-
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
-</form>
-
-<hr>
-
-<h2>Listagem de Estudantes</h2>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Idade</th>
-      <th>Curso</th>
-      <th>Email</th>
-      <th>Telefone</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let estudante of estudantes">
-      <td>{{ estudante.nome }}</td>
-      <td>{{ estudante.idade }}</td>
-      <td>{{ estudante.curso }}</td>
-      <td>{{ estudante.email }}</td>
-      <td>{{ estudante.telefone }}</td>
-    </tr>
-  </tbody>
-</table>
-
-<button class="btn btn-primary" (click)="carregarEstudantes()">Carregar Estudantes</button>

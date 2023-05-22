@@ -1,0 +1,57 @@
+Estilização do formulário de cadastro de estudante
+#cadastro-estudante {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cadastro-estudante h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#cadastro-estudante .form-group {
+  margin-bottom: 20px;
+}
+
+#cadastro-estudante label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#cadastro-estudante input[type="text"],
+#cadastro-estudante input[type="number"],
+#cadastro-estudante input[type="email"],
+#cadastro-estudante input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#cadastro-estudante button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cadastro-estudante button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#cadastro-estudante hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
