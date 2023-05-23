@@ -1,11 +1,10 @@
-Estilização do formulário de cadastro de estudante
+/* Estilização do formulário de cadastro de estudante */
 #cadastro-estudante {
   border: 1px solid #ccc;
   padding: 20px;
   width: 400px;
   margin: 0 auto;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9
 }
 
 #cadastro-estudante h2 {
@@ -55,3 +54,27 @@ Estilização do formulário de cadastro de estudante
   border-top: 1px solid #ccc;
 }
 
+/* Centralização das linhas da tabela de listagem de estudantes */
+table {
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Estilização da tabela de listagem de estudantes */
+table.table {
+  margin-top: 20px;
+}
+
+table.table th {
+  background-color: #f0f0f0;
+}
+
+table.table td,
+table.table th {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
